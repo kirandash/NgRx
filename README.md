@@ -45,12 +45,13 @@ A reducer is a function that takes an action and a state as input and returns a 
 ### What is a Redux Store?
 Store is an object which holds all the current state and all the reducers in our application. We use store to change a state or subscribe to any changes/updates happening in any state.
 
-## 4. NgRx Setup
+## 4. NgRx Setup and Create first State
 
 ### Installation
+Install angular: ng new ngrx
 Install schematics: npm install @ngrx/schematics --save-dev (only for dev purposes)
 Install store: npm install @ngrx/store --save
-Install dev tools: npm install @gnrx/store-devtools --save
+Install dev tools: npm install @ngrx/store-devtools --save
 
 Generate default state of our application - and default store for it.
 ng generate @ngrx/schematics:store State --root --module app.module.ts
@@ -59,3 +60,6 @@ This will create reducres file: app/reducer/index.ts with basic structure to hol
 Generate reducer
 ng generate @ngrx/schematics:reducer ZipCodes --group (The group option will create all the reducers in one place. Inside reducers folder)
 It will create a reducer file: reducer/zip-codes.reducer.ts with an empty state, empty defaultstate and a reducer function with default structure.
+
+### 6. Create First Action
+ng generate @ngrx/schematics:action Zipcode --group (group option is to group all the files into one folder called actions)
