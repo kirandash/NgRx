@@ -63,3 +63,9 @@ It will create a reducer file: reducer/zip-codes.reducer.ts with an empty state,
 
 ### 6. Create First Action
 ng generate @ngrx/schematics:action Zipcode --group (group option is to group all the files into one folder called actions)
+
+### 7. Use Actions in Reducer
+Use AddZipcode and RemoveZipcode in zip-codes.reducer.ts file
+
+Link the state and reducers in index.ts file of reducers
+
