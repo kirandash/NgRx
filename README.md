@@ -69,3 +69,8 @@ Use AddZipcode and RemoveZipcode in zip-codes.reducer.ts file
 
 Link the state and reducers in index.ts file of reducers
 
+### 8. Setup Components, Services in Angular
+1. Main page component to hold zipcode entry section and current conditions section
+2. Create zip code entry component with add & remove service
+3. On Adding zip code / location, current conditions component is updated.
+4. In current conditions, on click: we load forecast-list component.
